@@ -1,0 +1,6 @@
+[
+  {"name":"Whitefield","city":"Bangalore","latitude":12.9698,"longitude":77.75,"avgPricePerSqFt":8900,"priceGrowthPercent":6.8,"rentalYieldPercent":3.6,"rentalAbsorptionRate":0.82,"listingDensity":145,"infrastructureActivityScore":0.78,"sentimentScore":0.72,"oversupplyRisk":0.35},
+  {"name":"Devanahalli","city":"Bangalore","latitude":13.2519,"longitude":77.7214,"avgPricePerSqFt":5400,"priceGrowthPercent":14.2,"rentalYieldPercent":3.1,"rentalAbsorptionRate":0.58,"listingDensity":70,"infrastructureActivityScore":0.92,"sentimentScore":0.80,"oversupplyRisk":0.25},
+  {"name":"Sarjapur","city":"Bangalore","latitude":12.8986,"longitude":77.6854,"avgPricePerSqFt":7200,"priceGrowthPercent":9.1,"rentalYieldPercent":3.9,"rentalAbsorptionRate":0.88,"listingDensity":190,"infrastructureActivityScore":0.65,"sentimentScore":0.70,"oversupplyRisk":0.40},
+  {"name":"Hennur","city":"Bangalore","latitude":13.0450,"longitude":77.6450,"avgPricePerSqFt":5800,"priceGrowthPercent":11.6,"rentalYieldPercent":3.8,"rentalAbsorptionRate":0.72,"listingDensity":95,"infrastructureActivityScore":0.70,"sentimentScore":0.66,"oversupplyRisk":0.30}
+]

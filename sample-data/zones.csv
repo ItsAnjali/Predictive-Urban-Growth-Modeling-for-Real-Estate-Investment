@@ -1,0 +1,16 @@
+name,city,latitude,longitude,avgPricePerSqFt,priceGrowthPercent,rentalYieldPercent,rentalAbsorptionRate,listingDensity,infrastructureActivityScore,sentimentScore,oversupplyRisk
+Whitefield,Bangalore,12.9698,77.7500,8900,6.8,3.6,0.82,145,0.78,0.72,0.35
+Devanahalli,Bangalore,13.2519,77.7214,5400,14.2,3.1,0.58,70,0.92,0.80,0.25
+Sarjapur,Bangalore,12.8986,77.6854,7200,9.1,3.9,0.88,190,0.65,0.70,0.40
+Electronic City Phase 2,Bangalore,12.8340,77.6770,6200,3.4,3.4,0.55,240,0.50,0.45,0.78
+Hennur,Bangalore,13.0450,77.6450,5800,11.6,3.8,0.72,95,0.70,0.66,0.30
+Koramangala,Bangalore,12.9352,77.6245,13500,4.2,3.1,0.80,160,0.35,0.78,0.20
+HSR Layout,Bangalore,12.9116,77.6473,11200,5.6,3.3,0.85,150,0.45,0.75,0.25
+Indiranagar,Bangalore,12.9719,77.6412,14800,3.1,2.9,0.78,120,0.30,0.70,0.22
+Hebbal,Bangalore,13.0358,77.5970,9400,8.5,3.5,0.74,130,0.82,0.74,0.33
+Yelahanka,Bangalore,13.1007,77.5963,5600,9.8,3.4,0.62,85,0.72,0.65,0.38
+Kengeri,Bangalore,12.9081,77.4830,4800,5.2,3.2,0.48,60,0.55,0.50,0.55
+Bannerghatta,Bangalore,12.8007,77.5774,6400,7.0,3.3,0.60,80,0.60,0.58,0.45
+JP Nagar,Bangalore,12.9082,77.5855,9800,4.6,3.2,0.76,135,0.40,0.68,0.28
+Marathahalli,Bangalore,12.9591,77.6974,8700,6.0,3.7,0.84,175,0.50,0.72,0.42
+Bellandur,Bangalore,12.9257,77.6762,9100,5.0,3.6,0.80,200,0.55,0.64,0.60

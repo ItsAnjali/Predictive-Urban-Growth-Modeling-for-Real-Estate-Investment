@@ -1,0 +1,7 @@
+zoneName,title,type,stage,impactScore,expectedCompletionDate
+Whitefield,Purple Line Metro Extension,metro,under_construction,0.85,2026-12-01
+Devanahalli,Airport City Phase 2,airport,under_construction,0.95,2027-06-01
+Devanahalli,STRR Ring Road Link,highway,under_construction,0.80,
+Sarjapur,Sarjapur-Hebbal Metro (Phase 3),metro,approved,0.80,
+Hebbal,Hebbal Business District,it-park,approved,0.80,
+Electronic City Phase 2,Yellow Line Metro,metro,under_construction,0.75,2026-03-01

@@ -1,0 +1,69 @@
+// Prisma schema for Predictive Urban Growth Modeling MVP
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Zone {
+  id                        String   @id @default(cuid())
+  name                      String
+  city                      String
+  latitude                  Float
+  longitude                 Float
+  avgPricePerSqFt           Float
+  priceGrowthPercent        Float
+  rentalYieldPercent        Float
+  rentalAbsorptionRate      Float    // 0..1
+  listingDensity            Float    // listings per sq km (raw)
+  infrastructureActivityScore Float  // 0..1
+  sentimentScore            Float    @default(0.5) // 0..1
+  oversupplyRisk            Float    // 0..1
+  searchVolumeIndex         Float    @default(0) // 0..1 normalized portal search interest
+  readyToMovePriceGrowth    Float    @default(0) // YoY % for ready-to-move
+  underConstructionPriceGrowth Float @default(0) // YoY % for under-construction
+  growthVelocityScore       Float    @default(0)
+  opportunityLevel          String   @default("low") // low | medium | high
+  createdAt                 DateTime @default(now())
+  updatedAt                 DateTime @updatedAt
+
+  infrastructureProjects InfrastructureProject[]
+
+  @@unique([name, city])
+}
+
+model InfrastructureProject {
+  id                     String   @id @default(cuid())
+  zoneId                 String
+  title                  String
+  type                   String   // metro | highway | airport | it-park | civic
+  stage                  String   // announced | approved | under_construction | completed
+  impactScore            Float    // 0..1
+  expectedCompletionDate DateTime?
+  createdAt              DateTime @default(now())
+
+  zone Zone @relation(fields: [zoneId], references: [id], onDelete: Cascade)
+}
+
+model UploadJob {
+  id         String   @id @default(cuid())
+  sourceType String   // csv | json | manual
+  fileName   String
+  status     String   // success | failed | partial
+  rowCount   Int      @default(0)
+  message    String?
+  uploadedAt DateTime @default(now())
+}
+
+model ScoringWeights {
+  id         Int   @id @default(1)
+  infra      Float @default(0.30)
+  listing    Float @default(0.15)
+  pricing    Float @default(0.25)
+  rental     Float @default(0.20)
+  saturation Float @default(0.10)
+  updatedAt  DateTime @updatedAt
+}
